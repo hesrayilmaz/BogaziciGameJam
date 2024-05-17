@@ -20,20 +20,22 @@ public class NpcDialog : MonoBehaviour
     private float typeSpeed = 10f;
     private const float MAX_TYPE_TIME = 0.1f;
 
-    private Dictionary<string, string[]> dialogs = new Dictionary<string, string[]>()
-    {
-        { "Chef", new string[] { "Hello", "I am the chef. fkksdlgkdþlgkdslþklþdlþ"} },
-        { "Gardener", new string[] { "Hello" , "I am the gardener"} },
-        { "Servant", new string[] { "Hello", "I am the servant"} },
-        { "Guard", new string[] { "Hello", "I am the guard"} }
-    };
+    private List<string> paragraphs = new List<string>();
+    private int paragraphIndex = 0;
 
-    private int dialogIndex = 0;
+    private Coroutine typeDialogCoroutine;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        foreach (string paragraph in dialog.dialogParagraphs)
+        {
+            paragraphs.Add(paragraph);
+        }
+
+        
     }
 
     private void Update()
@@ -42,20 +44,25 @@ public class NpcDialog : MonoBehaviour
         {
             interactImage.gameObject.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.M))
             {
-                interactImage.gameObject.SetActive(false);
                 StartDialog();
             }
 
-            //if (Input.GetKeyDown(KeyCode.Return) && !isDialogEnded)
-            //{
-            //    if (dialogIndex < dialogs[npcType.ToString()].Length - 1)
-            //        NextDialog();
-            //    else
-            //        EndDialog();
-            //}
+            if (Input.GetKeyDown(KeyCode.Return) && !isDialogEnded)
+            {
+                if (!isTyping && (paragraphIndex < paragraphs.Count - 1))
+                    NextDialog();
+                else if (isTyping)
+                    FinishParagraphEarly();
+                else
+                    EndDialog();
+            }
 
+        }
+        else
+        {
+            interactImage.gameObject.SetActive(false);
         }
 
     }
@@ -72,17 +79,14 @@ public class NpcDialog : MonoBehaviour
     {
         isDialogEnded = false;
         dialogPanel.SetActive(true);
-        dialogIndex = 0;
-       // dialogText.text = dialogs[npcType.ToString()][dialogIndex];
+        paragraphIndex = 0;
+        dialogText.text = paragraphs[paragraphIndex];
     }
 
     private void NextDialog()
     {
-        dialogIndex++;
-    //    if(!isTyping)
-    //        StartCoroutine(TypeDialogCoroutine(dialogs[npcType.ToString()][dialogIndex]));
-    //    else
-    //        FinishParagraphEarly();
+        paragraphIndex++;
+        typeDialogCoroutine = StartCoroutine(TypeDialog(paragraphs[paragraphIndex]));
     }
 
     private void EndDialog()
@@ -92,7 +96,7 @@ public class NpcDialog : MonoBehaviour
         dialogText.text = "";
     }
 
-    private IEnumerator TypeDialogCoroutine(string dialog)
+    private IEnumerator TypeDialog(string dialog)
     {
         isTyping = true;
         dialogText.text = "";
@@ -115,8 +119,8 @@ public class NpcDialog : MonoBehaviour
 
     private void FinishParagraphEarly()
     {
-        StopCoroutine(TypeDialogCoroutine(""));
-        //dialogText.text = dialogs[npcType.ToString()][dialogIndex];
+        StopCoroutine(typeDialogCoroutine);
+        dialogText.text = paragraphs[paragraphIndex];
         isTyping = false;
     }
 }

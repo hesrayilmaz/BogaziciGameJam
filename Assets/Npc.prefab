@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57b383f7ebe3f564d83b3405f2732d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcType: 0
+  dialog: {fileID: 0}
   dialogPanel: {fileID: 3996776425418081417}
   dialogText: {fileID: 6308235575171054471}
   interactImage: {fileID: 4212220640897605138}

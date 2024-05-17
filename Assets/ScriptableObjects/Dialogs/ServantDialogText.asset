@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c759eddd1a9ab047b12ddd106fefc49, type: 3}
-  m_Name: GuardDialogText
+  m_Name: ServantDialogText
   m_EditorClassIdentifier: 
-  npcType: 3
-  dialogParagraphs: []
+  npcType: 2
+  dialogParagraphs:
+  - Hello
+  - I am the servant
