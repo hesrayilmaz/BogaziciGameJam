@@ -140,6 +140,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3949470661400993252, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 30e9c7b1e929b7d4287e60a7799409f1, type: 2}
+    - target: {fileID: 3949470661400993252, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
       propertyPath: npcType
       value: 1
       objectReference: {fileID: 0}
@@ -297,6 +301,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3949470661400993252, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b98006eb1c473548821063d384d082b, type: 2}
+    - target: {fileID: 3949470661400993252, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
       propertyPath: npcType
       value: 3
       objectReference: {fileID: 0}
@@ -361,6 +369,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3949470661400993252, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 1221ba90e7fc16a4ca9718bae171fcfd, type: 2}
     - target: {fileID: 3949470661400993252, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
       propertyPath: npcType
       value: 2
@@ -580,6 +592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chef
       objectReference: {fileID: 0}
+    - target: {fileID: 3949470661400993252, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 11400000, guid: 34e20ad28894e9844a22729340cf7ce2, type: 2}
     - target: {fileID: 4762339241151248800, guid: ec6684e28dc93ca4588c993f01fee028, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.21

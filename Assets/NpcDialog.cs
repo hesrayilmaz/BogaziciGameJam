@@ -3,23 +3,17 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public enum NpcType
-{
-    Chef,
-    Gardener,
-    Servant,
-    Guard
-}
+
 
 public class NpcDialog : MonoBehaviour
 {
-    [SerializeField] private NpcType npcType;
+    [SerializeField] private DialogText dialog;
     [SerializeField] private GameObject dialogPanel;
     [SerializeField] private TextMeshProUGUI dialogText;
     [SerializeField] private Image interactImage;
     private Transform player;
     private float interactDistance = 2f;
-    private bool isDialogActive = false;
+    private bool isDialogEnded = false;
     private bool isTyping = false;
     private const string HTML_ALPHA = "<color=#00000000>";
 
@@ -40,12 +34,6 @@ public class NpcDialog : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        StartDialog();
-        //for (int i = 0; i < dialogs[npcType.ToString()].Length; i++)
-        //{
-        //    dialogText.text = dialogs[npcType.ToString()][dialogIndex];
-        //    Debug.Log(dialogs[npcType.ToString()][i]);
-        //}
     }
 
     private void Update()
@@ -53,17 +41,21 @@ public class NpcDialog : MonoBehaviour
         if (IsWithinDialogRange())
         {
             interactImage.gameObject.SetActive(true);
-            
-            if(Input.GetKeyDown(KeyCode.E))
+
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 interactImage.gameObject.SetActive(false);
                 StartDialog();
             }
-        }
 
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            NextDialog();
+            //if (Input.GetKeyDown(KeyCode.Return) && !isDialogEnded)
+            //{
+            //    if (dialogIndex < dialogs[npcType.ToString()].Length - 1)
+            //        NextDialog();
+            //    else
+            //        EndDialog();
+            //}
+
         }
 
     }
@@ -71,46 +63,31 @@ public class NpcDialog : MonoBehaviour
     private bool IsWithinDialogRange()
     {
         if (Vector2.Distance(player.position, transform.position) < interactDistance)
-        {
             return true;
-        }
         else
-        {
             return false;
-        }
     }
 
     private void StartDialog()
     {
-        isDialogActive = true;
+        isDialogEnded = false;
         dialogPanel.SetActive(true);
         dialogIndex = 0;
-        dialogText.text = dialogs[npcType.ToString()][dialogIndex];
+       // dialogText.text = dialogs[npcType.ToString()][dialogIndex];
     }
 
     private void NextDialog()
     {
         dialogIndex++;
-        if (isDialogActive)
-        {
-            if(!isTyping)
-            {
-                StartCoroutine(TypeDialogCoroutine(dialogs[npcType.ToString()][dialogIndex]));
-            }
-            else
-            {
-                FinishParagraphEarly();
-            }
-        }
-        else if(!isDialogActive && !isTyping)
-        {
-            EndDialog();
-        }
+    //    if(!isTyping)
+    //        StartCoroutine(TypeDialogCoroutine(dialogs[npcType.ToString()][dialogIndex]));
+    //    else
+    //        FinishParagraphEarly();
     }
 
     private void EndDialog()
     {
-        isDialogActive = false;
+        isDialogEnded = true;
         dialogPanel.SetActive(false);
         dialogText.text = "";
     }
@@ -139,7 +116,7 @@ public class NpcDialog : MonoBehaviour
     private void FinishParagraphEarly()
     {
         StopCoroutine(TypeDialogCoroutine(""));
-        dialogText.text = dialogs[npcType.ToString()][dialogIndex];
+        //dialogText.text = dialogs[npcType.ToString()][dialogIndex];
         isTyping = false;
     }
 }
