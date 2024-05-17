@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterInventory : MonoBehaviour
 {
     public static CharacterInventory Instance;
-    [SerializeField]private List<InventoryItem> inventoryItems=new List<InventoryItem>();
+    public List<InventoryItem> inventoryItems=new List<InventoryItem>();
     private void Awake() {
         if (Instance==null)
         {
@@ -31,5 +31,16 @@ public class CharacterInventory : MonoBehaviour
          }
        }
       
+    }
+    public void DeleteItem(Item newItem)
+    {
+       foreach (InventoryItem item in inventoryItems)
+       {
+         if(newItem.itemType == item.currentItem?.itemType)
+         {
+              item.ResetSlot(-1);
+              return;
+         }
+       }
     }
 }

@@ -22,5 +22,11 @@ public class InventoryItem : MonoBehaviour
         myIcon.sprite=currentItem.itemPic;
         count+=increase;
         countText.text=count.ToString();
+        if (count<=0)
+        {
+          count=0;
+          currentItem=null;
+          myIcon.sprite=null;
+        }
     }
 }
