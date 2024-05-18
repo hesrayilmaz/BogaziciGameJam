@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
   public static GameManager Instance;
-  [HideInInspector]public GameObject PlayerRef;
+  public GameObject PlayerRef;
   private void Awake() {
     if(Instance==null)
     {

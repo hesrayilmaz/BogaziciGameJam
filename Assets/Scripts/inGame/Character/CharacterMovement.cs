@@ -17,10 +17,6 @@ public class Movement : MonoBehaviour
         anim=GetComponent<Animator>();
         currentGravity=GetComponent<Rigidbody2D>().gravityScale;
     }
-    private void Awake() {
-           GameManager.Instance.PlayerRef=gameObject;
-    }
-
     void FixedUpdate()
     {
         Move();

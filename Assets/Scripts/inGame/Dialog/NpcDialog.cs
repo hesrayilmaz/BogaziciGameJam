@@ -29,8 +29,7 @@ public class NpcDialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameManager.Instance.PlayerRef.transform;
-
+        
         foreach (string paragraph in dialogSO.dialogParagraphs)
         {
             paragraphs.Add(paragraph);
@@ -41,6 +40,12 @@ public class NpcDialog : MonoBehaviour
 
     private void Update()
     {
+        if (player==null)
+        {
+            Debug.Log(GameManager.Instance?.PlayerRef.transform);
+           player= GameManager.Instance?.PlayerRef.transform;
+           return;
+        }
         if (IsWithinDialogRange())
         {
             interactImage.gameObject.SetActive(true);

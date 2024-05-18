@@ -331,8 +331,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -214921631
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a911eb2312e12274ea21a265e20bf260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerRef: {fileID: 0}
+  PlayerRef: {fileID: 1933156151}
 --- !u!4 &356941978
 Transform:
   m_ObjectHideFlags: 0
@@ -3908,6 +3908,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812005414}
   m_CullTransparentMesh: 1
+--- !u!1 &1933156151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4867741890544734389, guid: 6f850862a0d1301439e51259ee90392e, type: 3}
+  m_PrefabInstance: {fileID: 6224344767399893954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2049930365
 GameObject:
   m_ObjectHideFlags: 0
