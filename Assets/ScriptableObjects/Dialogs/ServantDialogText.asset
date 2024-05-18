@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcType: 2
   dialogParagraphs:
-  - Hello
-  - I am the servant
+  - M-Merhaba
+  - B-Ben sadece isimle ilgileniyorum efendim.
+  - Patronla bir samimiyetimiz hic olmadi.
+  - O gun her zaman ki gibi etrafi temizliyordum.
+  - I-m sey patron raflari temizlememi istemisti.
+  - Amcanin yine mizmizlandigini duydum

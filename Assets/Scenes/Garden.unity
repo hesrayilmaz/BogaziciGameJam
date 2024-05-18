@@ -2558,15 +2558,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1017778674474504915, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
       propertyPath: actionName
-      value: gardenDoor
+      value: gardenChest
       objectReference: {fileID: 0}
     - target: {fileID: 3370808626097208080, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.56
+      value: -1.96
       objectReference: {fileID: 0}
     - target: {fileID: 3370808626097208080, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.41
+      value: -3.64
       objectReference: {fileID: 0}
     - target: {fileID: 3370808626097208080, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2600,9 +2600,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5355271043504733943, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0d540e89556283b4daf594c0ba752bf3, type: 3}
+    - target: {fileID: 5355271043504733943, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355271043504733943, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355271043504733943, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355271043504733943, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355271043504733943, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 800887237
+      objectReference: {fileID: 0}
     - target: {fileID: 9007136905418545032, guid: 92710e27618e4524781e57aa19a10c01, type: 3}
       propertyPath: m_Name
-      value: ActionDoor
+      value: ActionChest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3266,7 +3290,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

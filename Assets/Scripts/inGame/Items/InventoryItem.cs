@@ -11,7 +11,7 @@ public class InventoryItem : MonoBehaviour
     public Item currentItem;
     [SerializeField]public TextMeshProUGUI countText;
     public int count;
-
+    
     public void SlotItem(Item item,int newCount)
     {
         currentItem=item;
@@ -27,6 +27,11 @@ public class InventoryItem : MonoBehaviour
           count=0;
           currentItem=null;
           myIcon.sprite=null;
+          myIcon.gameObject.SetActive(false);
+        }
+        else
+        {
+             myIcon.gameObject.SetActive(true);
         }
     }
 }
