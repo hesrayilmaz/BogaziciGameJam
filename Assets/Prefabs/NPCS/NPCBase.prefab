@@ -195,10 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57b383f7ebe3f564d83b3405f2732d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogSO: {fileID: 0}
+  dialogSO: {fileID: 11400000, guid: 34e20ad28894e9844a22729340cf7ce2, type: 2}
   dialogPanel: {fileID: 6161965412861610454}
   dialogText: {fileID: 566579675401298498}
   interactImage: {fileID: 7453766895917991166}
+  facingright: 1
 --- !u!1 &6161965412861610454
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,8 +446,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c2779ef2a387a3c41a3c308fbac6bbf2, type: 2}
+  m_sharedMaterial: {fileID: 545746068357048249, guid: c2779ef2a387a3c41a3c308fbac6bbf2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -470,7 +471,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.1
+  m_fontSize: 0.2
   m_fontSizeBase: 0.1
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -11,6 +11,7 @@ public class NpcDialog : MonoBehaviour
     [SerializeField] private GameObject dialogPanel;
     [SerializeField] private TextMeshProUGUI dialogText;
     [SerializeField] private Image interactImage;
+    [SerializeField]private bool facingright=true;
     private Transform player;
     private float interactDistance = 2f;
     private bool isDialogEnded = false;
@@ -28,7 +29,7 @@ public class NpcDialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameManager.Instance.PlayerRef.transform;
 
         foreach (string paragraph in dialogSO.dialogParagraphs)
         {
@@ -43,10 +44,14 @@ public class NpcDialog : MonoBehaviour
         if (IsWithinDialogRange())
         {
             interactImage.gameObject.SetActive(true);
+            
+            if(transform.position.x-player.position.x>0&&facingright||transform.position.x-player.position.x<0&&facingright==false)
+            Flip();
 
             if (Input.GetKeyDown(KeyCode.M))
             {
                 StartDialog();
+                CameraMovement.Instance.zoomActive=true;
             }
 
             if (Input.GetKeyDown(KeyCode.Return) && !isDialogEnded)
@@ -65,6 +70,11 @@ public class NpcDialog : MonoBehaviour
             interactImage.gameObject.SetActive(false);
         }
 
+    }
+    void Flip()
+    {
+        GetComponent<SpriteRenderer>().flipX=facingright;
+        facingright=!facingright;
     }
 
     private bool IsWithinDialogRange()
@@ -91,9 +101,11 @@ public class NpcDialog : MonoBehaviour
 
     private void EndDialog()
     {
+         CameraMovement.Instance.zoomActive=false;
         isDialogEnded = true;
         dialogPanel.SetActive(false);
         dialogText.text = "";
+
     }
 
     private IEnumerator TypeDialog(string dialog)

@@ -543,6 +543,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307304742}
   m_CullTransparentMesh: 1
+--- !u!1 &356941976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 356941978}
+  - component: {fileID: 356941977}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &356941977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356941976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a911eb2312e12274ea21a265e20bf260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerRef: {fileID: 0}
+--- !u!4 &356941978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356941976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5499237, y: -1.8506739, z: 0.05383182}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +600,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -680,6 +726,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b201002b175fd4abe31c726c48cd79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  horSpace: 0
+  verSpace: 3.3
+  zoomValue: 4
+  zoomSpeed: 3
+  zoomActive: 0
 --- !u!1 &528740822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2695,30 +2759,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1905160270863990508, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
-      propertyPath: dialogSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 34e20ad28894e9844a22729340cf7ce2, type: 2}
-    - target: {fileID: 566579675401298498, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
-      propertyPath: m_fontSize
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 566579675401298498, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c2779ef2a387a3c41a3c308fbac6bbf2, type: 2}
-    - target: {fileID: 566579675401298498, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 545746068357048249, guid: c2779ef2a387a3c41a3c308fbac6bbf2, type: 2}
-    - target: {fileID: 566579675401298498, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 566579675401298498, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4458995981293767290, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.24
@@ -2762,10 +2802,6 @@ PrefabInstance:
     - target: {fileID: 4872889968104020881, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
       propertyPath: m_Name
       value: NPCBase
-      objectReference: {fileID: 0}
-    - target: {fileID: 6161965412861610454, guid: 6d1616ea3c570a04eadeeea8b6dccda7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3079,3 +3115,4 @@ SceneRoots:
   - {fileID: 3379192696672837449}
   - {fileID: 2056636111}
   - {fileID: 1432861981564581697}
+  - {fileID: 356941978}

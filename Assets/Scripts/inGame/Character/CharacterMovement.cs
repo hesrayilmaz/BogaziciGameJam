@@ -11,11 +11,14 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rgb2d;
     private bool isLadder;
     private float currentGravity;
-
+   
     private void Start() {
         rgb2d=GetComponent<Rigidbody2D>();
         anim=GetComponent<Animator>();
         currentGravity=GetComponent<Rigidbody2D>().gravityScale;
+    }
+    private void Awake() {
+           GameManager.Instance.PlayerRef=gameObject;
     }
 
     void FixedUpdate()
