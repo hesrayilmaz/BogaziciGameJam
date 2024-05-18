@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class ActionTemplate:MonoBehaviour
 {
     public Item myItem;
-    public bool isActive;
+    [HideInInspector]public bool isActive;
     public virtual void Active()
     {
          if (isActive)

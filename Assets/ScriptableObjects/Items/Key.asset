@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Key
   m_EditorClassIdentifier: 
   itemType: 0
-  itemPic: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  itemPic: {fileID: 21300000, guid: d76405c9ac02df145bae9fd11b63b133, type: 3}
