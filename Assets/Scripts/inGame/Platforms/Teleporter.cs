@@ -14,7 +14,8 @@ public class Teleporter : MonoBehaviour, IA_Interactable
     {
         Garden,
         Hall,
-        Kitchen
-
+        Kitchen,
+        Bedroom,
+        Cellar
     }
 }
