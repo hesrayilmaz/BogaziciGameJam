@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcType: 1
   dialogParagraphs:
-  - Hello
-  - I am the gardener
+  - As
+  - Kardesim ben sadece etrafla ilgileniyorum.
+  - O gun ne oldu nereden bileyim haberim yoktu.
+  - O gun kurekler suradaki mezari kopek icin kazmistim.
+  - Kurek nerede mi? Patron mahzene kaldiracagini soylemisti.
+  - Iyi gunler efenim
