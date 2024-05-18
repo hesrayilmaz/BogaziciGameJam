@@ -6,20 +6,19 @@ using UnityEngine.UI;
 
 public class InventoryItem : MonoBehaviour
 {
+    public string slotIndex;
     public Image myIcon;
-    [HideInInspector]public Item currentItem;
-    [SerializeField]private TextMeshProUGUI countText;
+    public Item currentItem;
+    [SerializeField]public TextMeshProUGUI countText;
     public int count;
 
-    public void SlotItem(Item item)
+    public void SlotItem(Item item,int newCount)
     {
-        Debug.Log("yeni item geldi");
         currentItem=item;
-        ResetSlot(1);
+        ResetSlot(newCount);
     }
     public void ResetSlot(int increase)
     {
-        Debug.Log("item eklendi");
         myIcon.sprite=currentItem.itemPic;
         count+=increase;
         countText.text=count.ToString();

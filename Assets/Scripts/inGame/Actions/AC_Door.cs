@@ -6,11 +6,13 @@ using UnityEngine;
 public class AC_Door : ActionTemplate,IA_Interactable
 {
 
+    private void Start() {
+    if (PlayerPrefs.GetInt(actionName)==1)
+     Debug.Log("kapı zaten açık");
+    }
     public override void Active()
     {
         base.Active();
-
-        Debug.Log("Kapı çalıştı");
     }
 
     public void Interact()

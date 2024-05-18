@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 3806875979852051970}
   - component: {fileID: 5824215923134177236}
   - component: {fileID: 2801825599538316862}
+  - component: {fileID: 6269842479708786480}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,3 +215,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6269842479708786480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4867741890544734389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105b41a70e650524e9ba70aaa5676fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryItems: []
+  allItems:
+  - {fileID: 11400000, guid: debfdce4d5441fe44bb58a2f97f7f192, type: 2}
+  - {fileID: 11400000, guid: e675c6ee8eac61a4eb446267b0172523, type: 2}

@@ -6,6 +6,8 @@ public abstract class ActionTemplate:MonoBehaviour
 {
     public Item myItem;
     [HideInInspector]public bool isActive;
+    [SerializeField][Header("IMPORTANT UNIQUE")]protected string actionName;
+    
     public virtual void Active()
     {
          if (isActive)
@@ -19,6 +21,7 @@ public abstract class ActionTemplate:MonoBehaviour
              CharacterInventory.Instance.DeleteItem(myItem);
              isActive=true;
              Debug.Log("aktif edildi");
+             PlayerPrefs.SetInt(actionName,1);
              ShowCase();
           }
        }
