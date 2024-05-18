@@ -5376,7 +5376,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 133701619373975496, guid: 4c2d32b6d8e207346af2e3d3c100146f, type: 3}
       propertyPath: teleportType
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4177242980199730081, guid: 4c2d32b6d8e207346af2e3d3c100146f, type: 3}
       propertyPath: m_Name
