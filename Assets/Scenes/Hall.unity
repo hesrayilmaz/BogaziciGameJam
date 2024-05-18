@@ -4465,6 +4465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myItem: {fileID: 11400000, guid: debfdce4d5441fe44bb58a2f97f7f192, type: 2}
+  myName: hallBook
 --- !u!58 &1564686942
 CircleCollider2D:
   m_ObjectHideFlags: 0
