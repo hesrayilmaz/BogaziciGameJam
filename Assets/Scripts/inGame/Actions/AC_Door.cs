@@ -18,6 +18,7 @@ public class AC_Door : ActionTemplate,IA_Interactable
     public void Interact()
     {
         //base
+
         Active();
     }
 

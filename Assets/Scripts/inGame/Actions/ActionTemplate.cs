@@ -25,6 +25,7 @@ public abstract class ActionTemplate:MonoBehaviour
              ShowCase();
           }
        }
+       
     }
     public virtual void ShowCase()
     {
