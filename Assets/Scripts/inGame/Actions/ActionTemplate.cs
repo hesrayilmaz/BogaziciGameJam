@@ -21,7 +21,7 @@ public abstract class ActionTemplate:MonoBehaviour
              CharacterInventory.Instance.DeleteItem(myItem);
              isActive=true;
              Debug.Log("aktif edildi");
-             PlayerPrefs.SetInt(actionName,1);
+             PlayerPrefs.SetString(actionName,"1");
              ShowCase();
           }
        }

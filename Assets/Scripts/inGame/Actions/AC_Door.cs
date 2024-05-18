@@ -7,7 +7,7 @@ public class AC_Door : ActionTemplate,IA_Interactable
 {
 
     private void Start() {
-    if (PlayerPrefs.GetInt(actionName)==1)
+    if (PlayerPrefs.GetString(actionName)=="1")
      Debug.Log("kapı zaten açık");
     }
     public override void Active()
@@ -24,5 +24,7 @@ public class AC_Door : ActionTemplate,IA_Interactable
     public override void ShowCase()
     {
       base.ShowCase();
+      NodeController.Instance.SolveNode(myItem);
+
     }
 }

@@ -9,13 +9,13 @@ public class ItemController : MonoBehaviour,IA_Interactable
 
     [Header("IMPORTANT UNIQUE")]public string myName;
     private void Start() {
-        if (PlayerPrefs.GetInt(myName)==1)
+        if (PlayerPrefs.GetString(myName)=="1")
           Destroy(gameObject);
     }
     public void Interact()
     {
          CharacterInventory.Instance.GetItem(myItem);
-         PlayerPrefs.SetInt(myName,1);
+         PlayerPrefs.SetString(myName,"1");
         Destroy(gameObject);
     }
 
