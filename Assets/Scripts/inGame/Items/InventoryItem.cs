@@ -10,10 +10,7 @@ public class InventoryItem : MonoBehaviour
     [HideInInspector]public Item currentItem;
     [SerializeField]private TextMeshProUGUI countText;
     public int count;
-    private void Start() {
-           CharacterInventory.Instance.inventoryItems.RemoveAll(item => item == null );
-        CharacterInventory.Instance.inventoryItems.Add(GetComponent<InventoryItem>());
-    }
+
     public void SlotItem(Item item)
     {
         Debug.Log("yeni item geldi");
