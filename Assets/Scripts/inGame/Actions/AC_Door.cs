@@ -9,6 +9,7 @@ public class AC_Door : ActionTemplate,IA_Interactable
     public override void Active()
     {
         base.Active();
+
         Debug.Log("Kapı çalıştı");
     }
 
@@ -16,5 +17,10 @@ public class AC_Door : ActionTemplate,IA_Interactable
     {
         //base
         Active();
+    }
+
+    public override void ShowCase()
+    {
+      base.ShowCase();
     }
 }

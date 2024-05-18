@@ -18,8 +18,14 @@ public abstract class ActionTemplate:MonoBehaviour
           {
              CharacterInventory.Instance.DeleteItem(myItem);
              isActive=true;
+             Debug.Log("aktif edildi");
+             ShowCase();
           }
        }
+    }
+    public virtual void ShowCase()
+    {
+      Debug.Log("şov time");
     }
 
   

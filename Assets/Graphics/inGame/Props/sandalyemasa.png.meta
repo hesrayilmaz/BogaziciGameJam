@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ef546d982705d374296feedfb6854635
+guid: 9757eba2074ef7546be584e1e5db9db4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zenginkadin_0
+      name: sandalyemasa_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf61e07537095a43bc8d7a527f7dc6d
-      internalID: -1388988672
+      spriteID: 44ff6c384e4ee3b4e9beade87b11a661
+      internalID: 438172353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zenginkadin_1
+      name: sandalyemasa_1
       rect:
         serializedVersion: 2
-        x: 24
+        x: 32
         y: 0
-        width: 24
-        height: 24
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,29 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbb1514edbb76044b97dfaa381c5391
-      internalID: -1141895533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zenginkadin_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7abec451fd051494d97f730f291101cc
-      internalID: 1823504807
+      spriteID: fb7c78c50f41dc5409dac593de7c9834
+      internalID: -1418140442
       vertices: []
       indices: 
       edges: []
@@ -170,9 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zenginkadin_0: -1388988672
-      zenginkadin_1: -1141895533
-      zenginkadin_2: 1823504807
+      sandalyemasa_0: 438172353
+      sandalyemasa_1: -1418140442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

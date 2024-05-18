@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ef546d982705d374296feedfb6854635
+guid: 3bb53c32bb88bca438a24445356d574b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zenginkadin_0
+      name: yemek_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf61e07537095a43bc8d7a527f7dc6d
-      internalID: -1388988672
+      spriteID: 614cd9b6029883343bb76007a8474834
+      internalID: -878658661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zenginkadin_1
+      name: yemek_1
       rect:
         serializedVersion: 2
         x: 24
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbb1514edbb76044b97dfaa381c5391
-      internalID: -1141895533
+      spriteID: b79059e6b1358b94194c98c86799445b
+      internalID: -1737319689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zenginkadin_2
+      name: yemek_2
       rect:
         serializedVersion: 2
         x: 48
@@ -153,8 +153,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7abec451fd051494d97f730f291101cc
-      internalID: 1823504807
+      spriteID: ec74ed4dafe7d5547b65785a510befe7
+      internalID: -2078279622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yemek_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb07b36a3cbbd4a4b9efbbee4387fabe
+      internalID: 1723334854
       vertices: []
       indices: 
       edges: []
@@ -170,9 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zenginkadin_0: -1388988672
-      zenginkadin_1: -1141895533
-      zenginkadin_2: 1823504807
+      yemek_0: -878658661
+      yemek_1: -1737319689
+      yemek_2: -2078279622
+      yemek_3: 1723334854
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

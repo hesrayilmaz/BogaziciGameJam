@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ef546d982705d374296feedfb6854635
+guid: a618572fd605c2a43a1d8e9242578c80
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zenginkadin_0
+      name: bicak_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf61e07537095a43bc8d7a527f7dc6d
-      internalID: -1388988672
+      spriteID: 45ce3fa42113b0344bd2c804cd3992f7
+      internalID: -1145415618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zenginkadin_1
+      name: bicak_1
       rect:
         serializedVersion: 2
         x: 24
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbb1514edbb76044b97dfaa381c5391
-      internalID: -1141895533
+      spriteID: 26db85685272ccf418fa41ceed1c9f73
+      internalID: -1277759500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zenginkadin_2
+      name: bicak_2
       rect:
         serializedVersion: 2
         x: 48
@@ -153,8 +153,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7abec451fd051494d97f730f291101cc
-      internalID: 1823504807
+      spriteID: 4e5f10a6ee014054da0a71050142270e
+      internalID: 1592583555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bicak_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d6ad1a0aadd6d4d901136f4676cf73
+      internalID: 479198252
       vertices: []
       indices: 
       edges: []
@@ -170,9 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zenginkadin_0: -1388988672
-      zenginkadin_1: -1141895533
-      zenginkadin_2: 1823504807
+      bicak_0: -1145415618
+      bicak_1: -1277759500
+      bicak_2: 1592583555
+      bicak_3: 479198252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

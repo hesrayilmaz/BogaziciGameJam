@@ -17,4 +17,9 @@ public class AC_Book : ActionTemplate,IA_Interactable
         //base
         Active();
     }
+
+    public override void ShowCase()
+    {
+       base.ShowCase();
+    }
 }

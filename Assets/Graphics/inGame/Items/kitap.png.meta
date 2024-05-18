@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ef546d982705d374296feedfb6854635
+guid: 62d7268256d78be47bc62ad6a0b38948
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zenginkadin_0
+      name: kitap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf61e07537095a43bc8d7a527f7dc6d
-      internalID: -1388988672
+      spriteID: 42de270dd451f1449948638e8d52dcd7
+      internalID: 1873404660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zenginkadin_1
+      name: kitap_1
       rect:
         serializedVersion: 2
         x: 24
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbb1514edbb76044b97dfaa381c5391
-      internalID: -1141895533
+      spriteID: 411909c9ce635e34c9b436c0b79f82b1
+      internalID: -1743911617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zenginkadin_2
+      name: kitap_2
       rect:
         serializedVersion: 2
         x: 48
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7abec451fd051494d97f730f291101cc
-      internalID: 1823504807
+      spriteID: 0aebf636c56f6d64aab4e72777d2812d
+      internalID: 948004569
       vertices: []
       indices: 
       edges: []
@@ -170,9 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      zenginkadin_0: -1388988672
-      zenginkadin_1: -1141895533
-      zenginkadin_2: 1823504807
+      kitap_0: 1873404660
+      kitap_1: -1743911617
+      kitap_2: 948004569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
