@@ -10,7 +10,7 @@ public enum NpcType
 }
 
 [CreateAssetMenu(menuName = "Dialog/New Dialog", fileName = "NewDialogText")]
-public class DialogText : ScriptableObject
+public class DialogTextSO : ScriptableObject
 {
     public NpcType npcType;
 

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class NpcDialog : MonoBehaviour
 {
-    [SerializeField] private DialogText dialog;
+    [SerializeField] private DialogTextSO dialogSO;
     [SerializeField] private GameObject dialogPanel;
     [SerializeField] private TextMeshProUGUI dialogText;
     [SerializeField] private Image interactImage;
@@ -30,7 +30,7 @@ public class NpcDialog : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        foreach (string paragraph in dialog.dialogParagraphs)
+        foreach (string paragraph in dialogSO.dialogParagraphs)
         {
             paragraphs.Add(paragraph);
         }
