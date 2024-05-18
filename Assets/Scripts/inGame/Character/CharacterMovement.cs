@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {  
     [SerializeField][Header("Stats")]private float speed;
     [SerializeField]private short facingRight=1;
     private Animator anim;
     private Rigidbody2D rgb2d;
+    [HideInInspector]public bool stop;
     private bool isLadder;
     private float currentGravity;
    
@@ -19,7 +20,11 @@ public class Movement : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if(stop==false)
         Move();
+        else
+        rgb2d.velocity=Vector2.zero;
+
         Anime();
     }
     void Move()

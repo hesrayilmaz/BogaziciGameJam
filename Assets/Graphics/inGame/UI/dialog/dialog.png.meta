@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9757eba2074ef7546be584e1e5db9db4
+guid: ecfcd1cf4c9ed50439c410de452418d7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,43 +97,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sandalyemasa_0
+      name: dialog_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.38}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44ff6c384e4ee3b4e9beade87b11a661
-      internalID: 438172353
+      spriteID: 3532bd921b7a5354c8b3da311c7b0152
+      internalID: 1935368475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sandalyemasa_1
+      name: dialog_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.38}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb7c78c50f41dc5409dac593de7c9834
-      internalID: -1418140442
+      spriteID: e2e34d5f15b773c44beb46b3aa1ea467
+      internalID: 1594403721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dialog_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89177438c4bca344883228d871bce808
+      internalID: 929459435
       vertices: []
       indices: 
       edges: []
@@ -149,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sandalyemasa_0: 438172353
-      sandalyemasa_1: -1418140442
+      dialog_0: 1935368475
+      dialog_1: 1594403721
+      dialog_2: 929459435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

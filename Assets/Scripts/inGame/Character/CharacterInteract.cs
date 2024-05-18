@@ -14,7 +14,12 @@ public class CharacterInteract : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.E))
+        if(GetComponent<CharacterMovement>().stop==false)
+       InteractArea();
+    }
+    void InteractArea()
+    {
+         if (Input.GetKey(KeyCode.E))
         {
             Collider2D hit=Functions.Instance.CheckCircle(characterRoot,interactRange,interactLayer);
            if(hit)

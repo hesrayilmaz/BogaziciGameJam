@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcType: 0
   dialogParagraphs:
-  - Hello
-  - I am the Chef mother F***ker
+  - O gun mu?
+  - Evet ne kotu bir gundu. Nihayet gecti.
+  - Ben sadece basit bir asciyim herhangi bir sey yapmadim.

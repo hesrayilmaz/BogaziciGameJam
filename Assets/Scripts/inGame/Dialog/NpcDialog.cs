@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class NpcDialog : MonoBehaviour
+public class NpcDialog : MonoBehaviour,IA_Interactable
 {
     [SerializeField] private DialogTextSO dialogSO;
     [SerializeField] private GameObject dialogPanel;
@@ -53,11 +53,7 @@ public class NpcDialog : MonoBehaviour
             if(transform.position.x-player.position.x>0&&facingright||transform.position.x-player.position.x<0&&facingright==false)
             Flip();
 
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                StartDialog();
-                CameraMovement.Instance.zoomActive=true;
-            }
+
 
             if (Input.GetKeyDown(KeyCode.Return) && !isDialogEnded)
             {
@@ -92,6 +88,7 @@ public class NpcDialog : MonoBehaviour
 
     private void StartDialog()
     {
+         CameraMovement.Instance.zoomActive=true;
         isDialogEnded = false;
         dialogPanel.SetActive(true);
         paragraphIndex = 0;
@@ -139,5 +136,10 @@ public class NpcDialog : MonoBehaviour
         StopCoroutine(typeDialogCoroutine);
         dialogText.text = paragraphs[paragraphIndex];
         isTyping = false;
+    }
+
+    public void Interact()
+    {
+       StartDialog();
     }
 }

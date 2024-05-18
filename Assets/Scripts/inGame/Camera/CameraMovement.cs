@@ -42,6 +42,7 @@ public class CameraMovement : MonoBehaviour
     {
        float newZoom=Mathf.Lerp(GetComponent<Camera>().orthographicSize,zoomValue,Time.deltaTime*zoomSpeed);
        GetComponent<Camera>().orthographicSize=newZoom;
+       GameManager.Instance.PlayerRef.GetComponent<CharacterMovement>().stop=true;
 
     }
     public void ResetZoom()
@@ -51,5 +52,6 @@ public class CameraMovement : MonoBehaviour
 
         float newZoom=Mathf.Lerp(GetComponent<Camera>().orthographicSize,currentFar,Time.deltaTime*zoomSpeed);
        GetComponent<Camera>().orthographicSize=newZoom;
+         GameManager.Instance.PlayerRef.GetComponent<CharacterMovement>().stop=false;
     }
 }
