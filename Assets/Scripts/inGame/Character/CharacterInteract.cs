@@ -11,6 +11,7 @@ public class CharacterInteract : MonoBehaviour
     [SerializeField]private Transform characterRoot;
     [SerializeField]private float interactRange;
     [SerializeField]private LayerMask interactLayer;
+    private bool coolDown;
 
     void FixedUpdate()
     {
@@ -19,17 +20,22 @@ public class CharacterInteract : MonoBehaviour
     }
     void InteractArea()
     {
-         if (Input.GetKey(KeyCode.E))
+         if (Input.GetKey(KeyCode.E)&&coolDown==false)
         {
             Collider2D hit=Functions.Instance.CheckCircle(characterRoot,interactRange,interactLayer);
            if(hit)
            {
-              AudioManager.Instance.PlaySFX("interaction1");
+                 coolDown=true;
+                 Invoke(nameof(ResetCoolDown),0.3f);
+                AudioManager.Instance.PlaySFX("interaction1");
                IA_Interactable interactHit=hit.GetComponent<IA_Interactable>();
-               AudioManager.Instance.PlaySFX("interaction1");
                interactHit.Interact();
            }
         }
+    }
+    void ResetCoolDown()
+    {
+         coolDown=false;
     }
     private void OnDrawGizmos() {
         Gizmos.color=Color.blue;

@@ -202,6 +202,7 @@ MonoBehaviour:
   dialogText: {fileID: 566579675401298498}
   facingright: 1
   isLocked: 0
+  anim: {fileID: 6103494647438463997}
 --- !u!61 &8552438986206887715
 BoxCollider2D:
   m_ObjectHideFlags: 0

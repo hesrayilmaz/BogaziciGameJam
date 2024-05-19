@@ -4113,6 +4113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myItem: {fileID: 11400000, guid: cd84a742e8faab34085777098401f9b6, type: 2}
   npcDialog: {fileID: 1352599357}
+  littleGirl: 0
 --- !u!1 &1406957201
 GameObject:
   m_ObjectHideFlags: 0

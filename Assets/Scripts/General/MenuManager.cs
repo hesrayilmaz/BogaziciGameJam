@@ -20,8 +20,14 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
+         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("isGameStarted", 1);
         AudioManager.Instance.ChangeScene("Garden");
+        SceneManager.LoadScene("Garden");
+    }
+    public void ResumeGame()
+    {
+          AudioManager.Instance.ChangeScene("Garden");
         SceneManager.LoadScene("Garden");
     }
 

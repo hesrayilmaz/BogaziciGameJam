@@ -23,12 +23,14 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
 
     private List<string> paragraphs = new List<string>();
     private int paragraphIndex = 0;
+    private bool panelOpened=false;
 
     private Coroutine typeDialogCoroutine;
+   [SerializeField] private Animator anim;
 
     void Start()
     {
-        
+        anim.GetComponent<Animator>();
         foreach (string paragraph in dialogSO.dialogParagraphs)
         {
             paragraphs.Add(paragraph);
@@ -47,12 +49,12 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
         }
         if (IsWithinDialogRange())
         {
-            if(transform.position.x-player.position.x>0&&facingright||transform.position.x-player.position.x<0&&facingright==false)
+            if(transform.position.x-player.position.x>0&&facingright&&panelOpened||transform.position.x-player.position.x<0&&facingright==false&&panelOpened)
             Flip();
 
 
 
-            if (Input.GetKeyDown(KeyCode.Return) && !isDialogEnded)
+            if (Input.GetKeyDown(KeyCode.Return) && !isDialogEnded&&isLocked==false&&panelOpened)
             {
                 if (!isTyping && (paragraphIndex < paragraphs.Count - 1))
                     NextDialog();
@@ -82,7 +84,9 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
     private void StartDialog()
     {
          CameraMovement.Instance.zoomActive=true;
+         anim.SetBool("speaking",true);
         isDialogEnded = false;
+        panelOpened=true;
         dialogPanel.SetActive(true);
         paragraphIndex = 0;
         dialogText.text = paragraphs[paragraphIndex];
@@ -96,8 +100,10 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
 
     private void EndDialog()
     {
+         anim.SetBool("speaking",false);
          CameraMovement.Instance.zoomActive=false;
         isDialogEnded = true;
+        panelOpened=false;
         dialogPanel.SetActive(false);
         dialogText.text = "";
 
