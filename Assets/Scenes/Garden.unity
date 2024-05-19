@@ -3051,7 +3051,7 @@ MonoBehaviour:
   - {fileID: 639000693}
   - {fileID: 2038462970}
   - {fileID: 1673203244}
-  Password: 1234
+  Password: 2141
   teleportType: 4
 --- !u!61 &913072024
 BoxCollider2D:

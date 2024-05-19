@@ -42,7 +42,12 @@ public class LockedKey : MonoBehaviour, IA_Interactable
        Debug.Log(getpasw);
        if(getpasw==Password)
        {
+        AudioManager.Instance.PlaySFX("correct");
           SceneManager.LoadScene(teleportType.ToString());
+       }
+       else
+       {
+         AudioManager.Instance.PlaySFX("wrong");
        }
     }
 }
