@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
+        
         if(PlayerPrefs.GetInt("isGameStarted",0) == 1)
             resumeButton.SetActive(true);
         else
