@@ -11,6 +11,7 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
+        AudioManager.Instance.ChangeScene("Garden");
         SceneManager.LoadScene("Garden");
     }
 
