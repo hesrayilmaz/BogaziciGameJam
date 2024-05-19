@@ -16,8 +16,6 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance;
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
-    private bool isPlaying = false;
-    private string currentScene;
 
     private void Awake()
     {
@@ -37,21 +35,8 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.volume = PlayerPrefs.GetFloat("VolumeValue", 1f);
         sfxSource.volume = PlayerPrefs.GetFloat("VolumeValue", 1f);
-        currentScene = "MainMenu";
-    }
-
-    private void Update()
-    {
-        if (currentScene == "MainMenu" && !isPlaying)
-        {
+        if(SceneManager.GetActiveScene().name=="MainMenu")
             PlayMusic("menu");
-            isPlaying = true;
-        }
-        else if(currentScene != "MainMenu" && !isPlaying)
-        {
-            PlayMusic("level");
-            isPlaying = true;
-        }
     }
 
     public void PlayMusic(string name)
@@ -88,7 +73,16 @@ public class AudioManager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        currentScene = sceneName;
-        isPlaying = false;
+        if (sceneName == "MainMenu" && musicSource.clip.name!="menu")
+        {
+            PlayMusic("menu");
+        }
+        else if (sceneName != "MainMenu" && !(musicSource.clip.name == "level" || musicSource.clip.name == "level2"))
+        {
+            if(UnityEngine.Random.Range(0,2)==0)
+                PlayMusic("level");
+            else
+                PlayMusic("level2");
+        }
     }
 }
