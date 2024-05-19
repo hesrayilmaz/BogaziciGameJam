@@ -8,9 +8,23 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject controlsPanel;
     [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject resumeButton;
+
+    private void Start()
+    {
+        if(PlayerPrefs.GetInt("isGameStarted",0) == 1)
+        {
+            resumeButton.SetActive(true);
+        }
+        else
+        {
+            resumeButton.SetActive(false);
+        }
+    }
 
     public void StartGame()
     {
+        PlayerPrefs.SetInt("isGameStarted", 1);
         AudioManager.Instance.ChangeScene("Garden");
         SceneManager.LoadScene("Garden");
     }

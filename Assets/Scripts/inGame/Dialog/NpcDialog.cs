@@ -10,7 +10,6 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
     [SerializeField] private DialogTextSO dialogSO;
     [SerializeField] private GameObject dialogPanel;
     [SerializeField] private TextMeshProUGUI dialogText;
-    [SerializeField] private Image interactImage;
     [SerializeField]private bool facingright=true;
     public bool isLocked=false;
     private Transform player;
@@ -48,8 +47,6 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
         }
         if (IsWithinDialogRange())
         {
-            interactImage.gameObject.SetActive(true);
-            
             if(transform.position.x-player.position.x>0&&facingright||transform.position.x-player.position.x<0&&facingright==false)
             Flip();
 
@@ -65,10 +62,6 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
                     EndDialog();
             }
 
-        }
-        else
-        {
-            interactImage.gameObject.SetActive(false);
         }
 
     }
