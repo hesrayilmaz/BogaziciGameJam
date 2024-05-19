@@ -26,6 +26,7 @@ public class CharacterInteract : MonoBehaviour
            {
               AudioManager.Instance.PlaySFX("interaction1");
                IA_Interactable interactHit=hit.GetComponent<IA_Interactable>();
+               AudioManager.Instance.PlaySFX("interaction1");
                interactHit.Interact();
            }
         }

@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -47,7 +46,11 @@ public class LockedKey : MonoBehaviour, IA_Interactable
        }
        else
        {
+<<<<<<< Updated upstream
          AudioManager.Instance.PlaySFX("wrong");
+=======
+          AudioManager.Instance.PlaySFX("wrong");
+>>>>>>> Stashed changes
        }
     }
 }
