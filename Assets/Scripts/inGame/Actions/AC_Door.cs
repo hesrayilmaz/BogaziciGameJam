@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AC_Door : ActionTemplate,IA_Interactable
 {
-
+    [SerializeField]private Item shovelItem;
     public override void Active()
     {
         base.Active();
@@ -22,6 +22,15 @@ public class AC_Door : ActionTemplate,IA_Interactable
     {
       base.ShowCase();
       NodeController.Instance.SolveNode(myItem);
+      foreach (InventoryItem item in CharacterInventory.Instance.inventoryItems)
+       {
+          if (shovelItem==item?.currentItem)
+          {
+             return;
+          }
+       }
+       CharacterInventory.Instance.GetItem(shovelItem);
+       PlayerPrefs.SetString("richGirl","1");
 
     }
 }

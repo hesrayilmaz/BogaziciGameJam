@@ -9,7 +9,8 @@ public enum NpcType
     Guard,
     RichWoman,
     RichMan,
-    LittleGirl
+    LittleGirl,
+    RichGirl
 }
 
 [CreateAssetMenu(menuName = "Dialog/New Dialog", fileName = "NewDialogText")]

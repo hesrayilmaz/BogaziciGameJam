@@ -6,6 +6,8 @@ public class NodeController : MonoBehaviour
 {
     [SerializeField]private List<Node> nodes = new List<Node>();
     public static NodeController Instance;
+    public GameObject selectScreen,nodeScreen;
+    public int activeNodeCount;
     private void Awake() {
         if (Instance==null)
         {
@@ -14,6 +16,7 @@ public class NodeController : MonoBehaviour
     }
 
     private void Start() {
+        activeNodeCount=nodes.Count;
         RefreshNode();
     }
     void RefreshNode()
@@ -21,8 +24,16 @@ public class NodeController : MonoBehaviour
        foreach (Node item in nodes)
        {
           if (PlayerPrefs.GetString(item.myName)=="1")
-          item.myLine.SetActive(false);
+          {
+             item.myLine.SetActive(false);
+             activeNodeCount--;
+          }
            
+       }
+       if (activeNodeCount<=0)
+       {
+         selectScreen.SetActive(true);
+         nodeScreen.SetActive(false);
        }
     }
     public void SolveNode(Item getItem)
