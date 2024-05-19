@@ -8,12 +8,13 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject controlsPanel;
     [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject storyPanel;
     [SerializeField] private GameObject resumeButton;
 
     private void Start()
     {
-        
-        if(PlayerPrefs.GetInt("isGameStarted",0) == 1)
+       
+        if (PlayerPrefs.GetInt("isGameStarted",0) == 1)
             resumeButton.SetActive(true);
         else
             resumeButton.SetActive(false);
@@ -21,7 +22,7 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
-         PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("isGameStarted", 1);
         AudioManager.Instance.ChangeScene("Garden");
         SceneManager.LoadScene("Garden");
@@ -65,6 +66,16 @@ public class MenuManager : MonoBehaviour
     public void CloseCredits()
     {
         creditsPanel.SetActive(false);
+    }
+
+    public void OpenStory()
+    {
+        storyPanel.SetActive(true);
+    }
+
+    public void CloseStory()
+    {
+        storyPanel.SetActive(false);
     }
 
 }
