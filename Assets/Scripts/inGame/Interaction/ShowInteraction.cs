@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShowInteraction : MonoBehaviour
 {
     [SerializeField] GameObject interactionObject;
+    public bool Locke=false;
 
     private void Start()
     {
@@ -14,6 +15,9 @@ public class ShowInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(Locke)
+        return;
+
         if (collision.gameObject.CompareTag("Player"))
         {
             interactionObject.SetActive(true);
@@ -22,6 +26,8 @@ public class ShowInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if(Locke)
+        return;
         if (collision.gameObject.CompareTag("Player"))
         {
             interactionObject.SetActive(false);
@@ -30,6 +36,8 @@ public class ShowInteraction : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if(Locke)
+        return;
         if (collision.gameObject.CompareTag("Player"))
         {
             interactionObject.SetActive(true);

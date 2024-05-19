@@ -15,6 +15,7 @@ public class AC_NPC_dialog : ActionTemplate
           {
             NodeController.Instance.SolveNode(myItem);
             npcDialog.isLocked=false;
+            GetComponent<ShowInteraction>().Locke=false;
             if (littleGirl)
             {
                 PlayerPrefs.SetString("Boss","1");
