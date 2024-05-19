@@ -24,7 +24,9 @@ public class CharacterInteract : MonoBehaviour
             Collider2D hit=Functions.Instance.CheckCircle(characterRoot,interactRange,interactLayer);
            if(hit)
            {
+              AudioManager.Instance.PlaySFX("interaction1");
                IA_Interactable interactHit=hit.GetComponent<IA_Interactable>();
+               AudioManager.Instance.PlaySFX("interaction1");
                interactHit.Interact();
            }
         }
