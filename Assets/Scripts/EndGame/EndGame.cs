@@ -11,16 +11,9 @@ public class EndGame : MonoBehaviour
         else
         Destroy(gameObject);
     }
-    public void GetSelect(bool select)
+    public void ResetGame()
     {
-       if (select)
-       {
-          Debug.Log("oyun kzanıldı");
-       }
-       else
-       {
-         Debug.Log("oyun kaybedildi");
-       }
+      PlayerPrefs.DeleteAll();
 
     }
 }

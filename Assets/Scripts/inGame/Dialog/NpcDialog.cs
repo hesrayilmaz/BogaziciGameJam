@@ -126,6 +126,7 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
 
             displayedText = dialogText.text.Insert(alphaIndex, HTML_ALPHA);
             dialogText.text = displayedText;
+            AudioManager.Instance.PlaySFX("chef");
             yield return new WaitForSeconds(MAX_TYPE_TIME/typeSpeed);
         }
         isTyping = false;

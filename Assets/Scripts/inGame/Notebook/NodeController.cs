@@ -16,11 +16,11 @@ public class NodeController : MonoBehaviour
     }
 
     private void Start() {
-        activeNodeCount=nodes.Count;
         RefreshNode();
     }
     void RefreshNode()
     {
+        activeNodeCount=nodes.Count;
        foreach (Node item in nodes)
        {
           if (PlayerPrefs.GetString(item.myName)=="1")
@@ -30,6 +30,7 @@ public class NodeController : MonoBehaviour
           }
            
        }
+       Debug.Log(activeNodeCount);
        if (activeNodeCount<=0)
        {
          selectScreen.SetActive(true);

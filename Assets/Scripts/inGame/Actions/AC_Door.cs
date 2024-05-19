@@ -24,13 +24,14 @@ public class AC_Door : ActionTemplate,IA_Interactable
       NodeController.Instance.SolveNode(myItem);
       foreach (InventoryItem item in CharacterInventory.Instance.inventoryItems)
        {
-          if (shovelItem==item?.currentItem)
+          if (myItem==item?.currentItem)
           {
-             return;
+              CharacterInventory.Instance.GetItem(shovelItem);
+              PlayerPrefs.SetString("richGirl","1");
+              CharacterInventory.Instance.DeleteItem(myItem);
           }
        }
-       CharacterInventory.Instance.GetItem(shovelItem);
-       PlayerPrefs.SetString("richGirl","1");
+
 
     }
 }

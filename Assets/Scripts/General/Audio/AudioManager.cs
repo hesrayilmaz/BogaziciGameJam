@@ -73,11 +73,11 @@ public class AudioManager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        if (sceneName == "MainMenu" && musicSource.clip.name!="menu")
+        if (sceneName == "MainMenu" && musicSource?.clip.name!="menu")
         {
             PlayMusic("menu");
         }
-        else if (sceneName != "MainMenu" && !(musicSource.clip.name == "level" || musicSource.clip.name == "level2"))
+        else if (sceneName != "MainMenu" && !(musicSource?.clip.name == "level" || musicSource?.clip.name == "level2"))
         {
             if(UnityEngine.Random.Range(0,2)==0)
                 PlayMusic("level");

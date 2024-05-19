@@ -29,6 +29,7 @@ public class Teleporter : MonoBehaviour, IA_Interactable,IA_Openable
         Kitchen,
         Bedroom,
         Cellar,
-        SecretRoom
+        SecretRoom,
+        MainMenu
     }
 }

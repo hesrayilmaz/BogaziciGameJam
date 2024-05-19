@@ -1441,7 +1441,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 22e5cbcac5d05e245a205fde206d5066, type: 3}
   - name: bookflip2
     clip: {fileID: 8300000, guid: 1d4442f11b3caf442a42c59acb45627b, type: 3}
-  - name: interaction
+  - name: interaction1
     clip: {fileID: 8300000, guid: 2bc42eafe2cadae40bd164511ec20604, type: 3}
   - name: interaction2
     clip: {fileID: 8300000, guid: fcd644098e51f1c49afa12b7f59629a0, type: 3}

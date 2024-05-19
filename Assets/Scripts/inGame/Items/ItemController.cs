@@ -14,6 +14,7 @@ public class ItemController : MonoBehaviour,IA_Interactable
     }
     public void Interact()
     {
+        AudioManager.Instance.PlaySFX("interaction1");
          CharacterInventory.Instance.GetItem(myItem);
          PlayerPrefs.SetString(myName,"1");
         Destroy(gameObject);
