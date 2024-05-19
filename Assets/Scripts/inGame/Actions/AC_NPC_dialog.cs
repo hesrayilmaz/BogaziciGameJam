@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
 
-public class AC_Book : ActionTemplate,IA_Interactable
+public class AC_NPC_dialog : ActionTemplate
 {
-    [SerializeField]private GameObject BookScene,BackButton;
+    [SerializeField]private NpcDialog npcDialog;
+
     public override void Active()
     {
          foreach (InventoryItem item in CharacterInventory.Instance.inventoryItems)
@@ -13,17 +13,14 @@ public class AC_Book : ActionTemplate,IA_Interactable
           if (myItem==item?.currentItem)
           {
             NodeController.Instance.SolveNode(myItem);
-            BackButton.SetActive(true);
-            BookScene.SetActive(true);
-            CameraMovement.Instance.zoomActive=true;
+            npcDialog.isLocked=false;
           }
        }
     }
 
-    public void Interact()
-    {
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag=="Player")
         Active();
     }
 
- 
 }

@@ -8,6 +8,10 @@ public class CameraMovement : MonoBehaviour
     private float currentFar;
     [HideInInspector]public bool zoomActive=false;
     public static CameraMovement Instance;
+
+    public bool changeZoom{
+        get{return zoomActive;}set{zoomActive=value;}
+    }
     private void Awake() {
         if (Instance==null)
          Instance=this;

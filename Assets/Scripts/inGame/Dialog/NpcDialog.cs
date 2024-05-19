@@ -12,6 +12,7 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
     [SerializeField] private TextMeshProUGUI dialogText;
     [SerializeField] private Image interactImage;
     [SerializeField]private bool facingright=true;
+    public bool isLocked=false;
     private Transform player;
     private float interactDistance = 2f;
     private bool isDialogEnded = false;
@@ -26,7 +27,6 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
 
     private Coroutine typeDialogCoroutine;
 
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -140,6 +140,7 @@ public class NpcDialog : MonoBehaviour,IA_Interactable
 
     public void Interact()
     {
+       if(isLocked==false)
        StartDialog();
     }
 }

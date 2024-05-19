@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class Teleporter : MonoBehaviour, IA_Interactable,IA_Openable
        Interact();
        
     }
-
+    [Serializable]
     public enum TeleportType
     {
         Garden,

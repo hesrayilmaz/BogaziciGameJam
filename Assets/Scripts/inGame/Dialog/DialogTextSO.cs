@@ -6,7 +6,10 @@ public enum NpcType
     Chef,
     Gardener,
     Servant,
-    Guard
+    Guard,
+    RichWoman,
+    RichMan,
+    LittleGirl
 }
 
 [CreateAssetMenu(menuName = "Dialog/New Dialog", fileName = "NewDialogText")]

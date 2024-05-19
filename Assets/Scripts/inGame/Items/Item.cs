@@ -18,7 +18,8 @@ public enum ItemType
 {
     Key,
     Book,
-    Knife
+    Knife,
+    Shovel
 }
     
 

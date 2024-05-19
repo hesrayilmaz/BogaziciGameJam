@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617ce15a8580b1b46ae411295af0e381, type: 3}
+  m_Name: Shovel
+  m_EditorClassIdentifier: 
+  itemType: 3
+  itemPic: {fileID: -579927162, guid: a2e7a906d215f89459a82c053ab1f3d2, type: 3}

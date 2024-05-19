@@ -3202,7 +3202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 133701619373975496, guid: 4c2d32b6d8e207346af2e3d3c100146f, type: 3}
       propertyPath: teleportType
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4177242980199730081, guid: 4c2d32b6d8e207346af2e3d3c100146f, type: 3}
       propertyPath: m_Name
@@ -4620,9 +4620,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1817150868519044484, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817150868519044484, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817150868519044484, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 519420034}
+    - target: {fileID: 1817150868519044484, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817150868519044484, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_changeZoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817150868519044484, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CameraMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817150868519044484, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2337551040687902098, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 519420034}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_changeZoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CameraMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315511241360656750, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8084158221179267237, guid: 4e039fdd35a9af44a8ca0ecda444a09f, type: 3}
       propertyPath: m_Pivot.x
