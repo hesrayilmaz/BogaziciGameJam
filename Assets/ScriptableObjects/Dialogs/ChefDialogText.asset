@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcType: 0
   dialogParagraphs:
-  - O gun mu?
-  - Evet ne kotu bir gundu. Nihayet gecti.
-  - Ben sadece basit bir asciyim herhangi bir sey yapmadim.
+  - Butun etler tavaya hepsini yemek istiyorum.
+  - O... merhaba efendim.
+  - Bugun yine klasiklerden yapicam bol etli sote...
+  - Anahtar mi? Bahcivan kadar sinsi birini gormedim.
+  - Tek dusundugu insanlari birbirine dusurmek umarim o kurek bir gun ona...
+  - Ne kurek mi dedim? Ah-Evet
+  - Nerede oldugunu bilmiyorum sadece belki mahzende olabilir
+  - Gerci bir onemi yok anahtari kayip, bulursan haberdar et.
+  - Ahh et diyince yine aciktim enfesss.
+  - Hadi gorusuruz...

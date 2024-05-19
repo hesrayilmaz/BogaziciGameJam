@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c759eddd1a9ab047b12ddd106fefc49, type: 3}
+  m_Name: LittleGirl
+  m_EditorClassIdentifier: 
+  npcType: 6
+  dialogParagraphs:
+  - Hayir... hayir gelme
+  - Korkuyorum yapma...
+  - Neden bunu kendine yaptin neden?
+  - Biz seni neysen o sekilde seviyorduk...
+  - Ablam sal**gin teki nefret ediyorum ondan. Nefret.
+  - O yapti evet ablamdi...
+  - Alin onu goturun buradan lutfen abi yalvaririm.
+  - Evdeki her seye zarar verdi. Ah bir de o hizmetci yok mu.
+  - Hepsi yapisti babama abi.. Ne istediler ondan.
+  - Hepsi adeta bir dugum gibi bogazladilar babami.
+  - Sen bir katil ariyorsun abi ama fiziksel bir olusum ariyorsun.
+  - Ama onlar abi sadece bakarak bile mahvettiler babami.
+  - Gokmen amca bana oyle bakma nefret ediyorum hepinizden.
+  - NEFRET!

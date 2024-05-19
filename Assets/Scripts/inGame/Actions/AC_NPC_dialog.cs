@@ -5,6 +5,7 @@ using UnityEngine;
 public class AC_NPC_dialog : ActionTemplate
 {
     [SerializeField]private NpcDialog npcDialog;
+    [SerializeField]private bool littleGirl=false;
 
     public override void Active()
     {
@@ -14,6 +15,11 @@ public class AC_NPC_dialog : ActionTemplate
           {
             NodeController.Instance.SolveNode(myItem);
             npcDialog.isLocked=false;
+            if (littleGirl)
+            {
+                PlayerPrefs.SetString("Boss","1");
+                EndGame.Instance.Refresh();
+            }
           }
        }
     }

@@ -401,6 +401,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8084158221179267237}
     m_Modifications:
+    - target: {fileID: 1520816915236483907, guid: b049743b9b38da2499792129e9736a4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7226327420873621291, guid: b049743b9b38da2499792129e9736a4b, type: 3}
       propertyPath: m_Name
       value: NoteBook
@@ -485,11 +489,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8538981814600189934, guid: b049743b9b38da2499792129e9736a4b, type: 3}
+      propertyPath: Boss
+      value: 
+      objectReference: {fileID: 1196583950096561817}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b049743b9b38da2499792129e9736a4b, type: 3}
+--- !u!1 &1196583950096561817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520816915236483907, guid: b049743b9b38da2499792129e9736a4b, type: 3}
+  m_PrefabInstance: {fileID: 396343353196873178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2039503162166947912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1859385762787374482, guid: b049743b9b38da2499792129e9736a4b, type: 3}
